@@ -4,3 +4,144 @@
 
 # files in the middle
 *.h5
+=======
+# Output folder
+output/
+
+# Compiled source
+*.o
+*.Plo
+*.Po
+*.lo
+*.la
+*.a
+*.os
+*.pyc
+*.so
+*.pc
+*.pyd
+*.def
+*.dll
+*.exe
+*.dylib
+dolfin/libdolfin.so*
+
+# FFC generated code in library
+dolfin/ale/Poisson*D.h
+
+# FFC generated code in benchmarks
+bench/fem/convergence/cpp/Poisson2D_1.cpp
+bench/fem/convergence/cpp/Poisson2D_2.cpp
+bench/fem/convergence/cpp/Poisson2D_3.cpp
+bench/fem/convergence/cpp/Poisson2D_4.cpp
+bench/fem/convergence/cpp/Poisson2D_5.cpp
+bench/fem/convergence/cpp/Poisson3D_1.cpp
+bench/fem/convergence/cpp/Poisson3D_2.cpp
+bench/fem/convergence/cpp/Poisson3D_3.cpp
+bench/fem/convergence/cpp/Poisson3D_4.cpp
+
+# Log files
+*.log
+
+# Install directory
+/local
+/local.*
+
+# SWIG generated files
+dolfin/swig/**/**/*.py
+dolfin/swig/**/**/*.h
+dolfin/swig/**/**/*.cc
+dolfin/swig/**/**/*.cxx
+dolfin/swig/**/**/module.i
+dolfin/swig/**/**/dependencies.txt
+swigimportinfo.py
+
+# Documentation
+docstrings.i
+
+# Configuration files
+dolfin.conf
+dolfin-version
+dolfin-config.cmake
+DOLFINConfig.cmake
+DOLFINConfigVersion.cmake
+UseDOLFIN.cmake
+dolfin-config-version.cmake
+
+# Demos and tests
+build_demo.*
+test_*_tempdir
+test/unit/mesh/{cpp,python}/*.{xml,m}
+test/unit/parameter/{cpp,python}/*.{xml,xml.gz}
+bench/**/**/cpp/forms/*.h
+bench/**/**/cpp/*.h
+test/unit/**/python/*.xml
+test/unit/**/cpp/*.xml
+test/unit/cpp/function/Projection.h
+test/unit/cpp/la/forms/ReactionDiffusion.h
+test/unit/cpp/la/forms/ReactionDiffusionAction.h
+test/unit/cpp/multimesh/MultiMeshStokes2D.h
+test/**/.cache/
+
+# FFC generated demo files
+demo/**/**/cpp/*.h
+demo/documented/cahn-hilliard/cpp/CahnHilliard2D.cpp
+demo/documented/cahn-hilliard/cpp/CahnHilliard3D.cpp
+
+
+# QT generated code
+moc_*
+
+# Temporaries
+*~
+
+# Compressed files
+*.xz
+*.gz
+*.zs-old
+
+# Data files
+*.pvd
+*.pvtu
+*.vtu
+*.h5
+*.xdmf
+*.bin
+
+# CMake and Make file
+CMakeLists.txt
+!/CMakeLists.txt
+!dolfin/CMakeLists.txt
+!bench/CMakeLists.txt
+!dolfin/swig/CMakeLists.txt
+!doc/CMakeLists.txt
+!demo/CMakeLists.txt
+!test/unit/CMakeLists.txt
+!test/unit/cpp/CMakeLists.txt
+
+
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+cmake_uninstall.cmake
+Makefile
+install_manifest.txt
+
+# Local build files
+/build
+/build.*/
+
+# OS X files
+.DS_Store
+.DS_Store?
+
+# Eclipse files
+.*project
+.settings
+
+cmake.local
+
+# Google Test Files
+/GoogleTest/
+
+build/
